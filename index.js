@@ -9,6 +9,11 @@ $(document).keypress(function (){
   $("h1").text("Level " + levelNumber);
 })
 
+$(document).click(function (){
+  nextSequence();
+  $("h1").text("Level " + levelNumber);
+})
+
 $(".btn").click(function() {
   var userChosenColor = $(this).attr("id");
   userPattern.push(userChosenColor);
